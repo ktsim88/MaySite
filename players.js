@@ -1,37 +1,37 @@
 const players = [
     {
-        firstName: 'Francisco',
-        lastName: 'Lindor',
+        firstName: 'White Lily',
+        lastName: 'Cookie',
         position: '55',
         age: 31,
-        photo: 'https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI'
+        photo: 'imgs/whiteLily.webp'
     },
     {
-        firstName: 'Francisco',
-        lastName: 'Lindor',
+        firstName: 'Dark Cacao',
+        lastName: 'Cookie',
         position: '55',
         age: 31,
-        photo: 'https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI'
+        photo: 'imgs/darkCacao.webp'
     },
     {
-        firstName: 'Francisco',
-        lastName: 'Lindor',
+        firstName: 'Pure Vanilla',
+        lastName: 'Cookie',
         position: '55',
         age: 31,
-        photo: 'https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI'
+        photo: 'imgs/pureVanilla.webp'
     },
     {
-        firstName: 'Francisco',
-        lastName: 'Lindor',
+        firstName: 'Hollyberry',
+        lastName: 'Cookie',
         position: '55',
         age: 31,
-        photo: 'https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI'
+        photo: 'imgs/hollyberry.webp'
     },
     {
-        firstName: 'Francisco',
-        lastName: 'Lindor',
+        firstName: 'Golden Cheese',
+        lastName: 'Cookie',
         position: '55',
         age: 31,
-        photo: 'https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI'
+        photo: 'imgs/goldenCheese.webp'
     },
 ]
