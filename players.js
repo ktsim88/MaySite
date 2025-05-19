@@ -1,37 +1,48 @@
+// rarity switched the age from tutorial
 const players = [
     {
         firstName: 'White Lily',
+        alt: 'whiteLily',
         lastName: 'Cookie',
-        position: '55',
-        age: 31,
-        photo: 'imgs/whiteLily.webp'
+        position: 'Rear',
+        rarity: 'Ancient',
+        photo: 'imgs/whiteLily.webp',
+        info: 'This cookie is old'
     },
     {
         firstName: 'Dark Cacao',
+        alt: 'darkCacao',
         lastName: 'Cookie',
-        position: '55',
-        age: 31,
-        photo: 'imgs/darkCacao.webp'
+        position: 'Front',
+        rarity: 'Ancient',
+        photo: 'imgs/darkCacao.webp',
+        info: 'this cookie has an awful son'
     },
     {
         firstName: 'Pure Vanilla',
+        alt: 'pureVanilla',
         lastName: 'Cookie',
-        position: '55',
-        age: 31,
-        photo: 'imgs/pureVanilla.webp'
+        position: 'Rear',
+        rarity: 'Ancient',
+        photo: 'imgs/pureVanilla.webp',
+        info: 'this cookie is a little grandpa'
     },
     {
         firstName: 'Hollyberry',
+        alt: 'hollyberry',
         lastName: 'Cookie',
-        position: '55',
-        age: 31,
-        photo: 'imgs/hollyberry.webp'
+        position: 'Front',
+        rarity: 'Ancient',
+        photo: 'imgs/hollyberry.webp',
+        info: 'this cookie is a little grandma'
     },
     {
         firstName: 'Golden Cheese',
+        alt: 'goldenCheese',
         lastName: 'Cookie',
-        position: '55',
-        age: 31,
-        photo: 'imgs/goldenCheese.webp'
+        position: 'Middle',
+        rarity: 'Ancient',
+        photo: 'imgs/goldenCheese.webp',
+        info: 'this cookie is a little rusty'
     },
 ]
