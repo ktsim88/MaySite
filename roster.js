@@ -17,20 +17,32 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${p.position}
                         </div>
                         <p class="small text-muted mb-0">${p.rarity}</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal" onclick="learnMore()">
                             Learn More
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="${p.alt}Modal" tabindex="-1" aria-labelledby="${p.alt}ModalLabel" aria-hidden="true">
+                            <div class="modal modal-xl fade" id="${p.alt}Modal" tabindex="-1" aria-labelledby="cookieLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="${p.alt}ModalLabel">More About ${p.firstName} ${p.lastName}</h1>
+                                    <h1 class="modal-title fs-5" id="cookieLabel">More About ${p.firstName} ${p.lastName}</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <p>${p.info}</p>
+                                <div class="modal-body" id="info-body">
+                                    <div class="row">
+                                        <div class="col-md-6 ms-auto">
+                                            <img src="${p.topping}" class="card-img-top" id="cookieTopping" alt="${p.toppingDescription}">
+                                            <div class="card-body">
+                                                <p class="card-text" id="cookieToppingDescription">${p.toppingDescription}</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 ms-auto">
+                                            <p id="cookieType">${p.type}</p>
+                                            <p id="cookieInfo">${p.info}</p>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -40,13 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                     </div>
                 </div>
-            
+                
             `
-const modal = document.getElementById(`${p.alt}Modal`)
-
+            
             grid.appendChild(col)
 
         })
     }
     render(players)
+    
 })
+
+// function learnMore() {
+//     let cookieInfo = document.getElementById('cookieInfo')
+//     let cookieLabel = document.getElementById('cookieLabel')
+//     cookieInfo.textContent = `${players.info}`
+//     cookieLabel.textContent = `More About ${players.firstName} ${players.lastName}`
+//     console.log('it shows up :)')
+    
+// }

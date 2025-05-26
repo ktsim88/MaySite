@@ -1,4 +1,3 @@
-// rarity switched the age from tutorial
 const players = [
     {
         firstName: 'White Lily',
@@ -7,7 +6,12 @@ const players = [
         position: 'Rear',
         rarity: 'Ancient',
         photo: 'imgs/whiteLily.webp',
-        info: 'This cookie is old'
+        info: `A solitary beam of moonlight shines in the twilight. Like a pale lily touched by the gentle drops of rain, a Cookie silently entered the world. Her petals might look soft, and her dough frail, but nothing could stop her steps as she explored every corner of Earthbread, seeking a safer and happier future for all Cookiekind. Alas, at the end of her journey, all she found was the dark truth of this world. That truth painted her faith and curiosity with despair and anger, awakening a terrifying darkness deep within. Will White Lily Cookie find her lost voice once again amidst the deafening silence? With a seed of hatred and despair in her heart, will she walk towards the light once more?
+
+`,
+        topping: 'https://images.mobi.gg/uploads/2025/04/searing-raspberry-topping.webp',
+        toppingDescription: '5 searing raspberry',
+        type: 'Bomber',
     },
     {
         firstName: 'Dark Cacao',
@@ -16,7 +20,10 @@ const players = [
         position: 'Front',
         rarity: 'Ancient',
         photo: 'imgs/darkCacao.webp',
-        info: 'this cookie has an awful son'
+        info: 'this cookie has an awful son',
+        topping: 'https://images.mobi.gg/uploads/2025/04/searing-raspberry-topping.webp',
+        toppingDescription: '5 searing raspberry',
+        type: 'Bomber',
     },
     {
         firstName: 'Pure Vanilla',
@@ -25,7 +32,10 @@ const players = [
         position: 'Rear',
         rarity: 'Ancient',
         photo: 'imgs/pureVanilla.webp',
-        info: 'this cookie is a little grandpa'
+        info: 'this cookie is a little grandpa',
+        topping: 'https://images.mobi.gg/uploads/2025/04/searing-raspberry-topping.webp',
+        toppingDescription: '5 searing raspberry',
+        type: 'Bomber',
     },
     {
         firstName: 'Hollyberry',
