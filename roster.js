@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${p.photo}" class="card-img-top" alt="${p.firstName} ${p.lastName}">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-1">${p.firstName} ${p.lastName}</h5>
-                        <div class="${p.position}">
-                            ${p.position}
+                        <div class="${p.rarity}">
+                            ${p.rarity}
                         </div>
-                        <p class="small text-muted mb-0">${p.rarity}</p>
+                <div id="cookieType">${p.type}</div>
+                        <p class="small text-muted mb-2">${p.position}</p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal" onclick="learnMore()">
                             Learn More
                             </button>
@@ -31,16 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class="modal-body" id="info-body">
                                     <div class="row">
-                                        <div class="col-md-6 ms-auto">
-                                            <img src="${p.topping}" class="card-img-top" id="cookieTopping" alt="${p.toppingDescription}">
-                                            <div class="card-body">
-                                                <p class="card-text" id="cookieToppingDescription">${p.toppingDescription}</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 ms-auto">
-                                            <p id="cookieType">${p.type}</p>
-                                            <p id="cookieInfo">${p.info}</p>
-                                        </div>
+                                    <div id="cookieInfo">${p.info}</div>
+                                        
                                         
                                     </div>
                                 </div>
