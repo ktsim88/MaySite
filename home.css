@@ -1,0 +1,10 @@
+body {
+        background-image: url('imgs/crkHomeBG.webp');
+        background-repeat: no-repeat;
+        min-width: 100vh;
+        min-height: 100vh;
+        background-size: cover;
+      }
+.crkBox {
+    background-color: white;
+}
