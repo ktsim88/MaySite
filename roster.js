@@ -55,12 +55,3 @@ document.addEventListener('DOMContentLoaded', () => {
     render(players)
     
 })
-
-// function learnMore() {
-//     let cookieInfo = document.getElementById('cookieInfo')
-//     let cookieLabel = document.getElementById('cookieLabel')
-//     cookieInfo.textContent = `${players.info}`
-//     cookieLabel.textContent = `More About ${players.firstName} ${players.lastName}`
-//     console.log('it shows up :)')
-    
-// }
