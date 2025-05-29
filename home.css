@@ -1,6 +1,30 @@
-body {
-      background-color: blue;
-      }
+
 .crkBox {
-    background-color: white;
+    background-color: #ffe1c5;
+}
+.rosterBtn {
+    background-color: #7ace0e;
+}
+.rosterBtn:hover {
+    background-color: green;
+        border: 2px solid;
+}
+.aboutBtn {
+    background-color: #0ca6df;
+}
+.aboutBtn:hover {
+    background-color: #112fa5;
+            border: 2px solid;
+
+}
+body {
+  --s: 83px; /* control the size*/
+  --c1: #6a4b3e;
+  --c2: #ffb433;
+  
+  background:
+    radial-gradient(#0000 50%,var(--c1) 52% 55%,var(--c2) 57%)
+    0 0/var(--s) var(--s),
+    repeating-linear-gradient(45deg,var(--c1) 0 25%,var(--c2) 0 50%)
+    0 0/calc(2*var(--s)) calc(2*var(--s))
 }

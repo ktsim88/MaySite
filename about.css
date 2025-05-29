@@ -1,0 +1,38 @@
+body {
+    color: rgb(255, 192, 130);
+}
+h1 {
+    font-weight: 800;
+}
+.card-body {
+    background-color: rgb(205, 134, 64);
+}
+#mainStrawberry {
+    background-color:#E3576F;
+}
+#mainWizard {
+    background-color: #5961FF;
+}
+#mainChili {
+    background-color: rgb(255, 72, 72);
+}
+#mainCustard {
+    background-color: rgb(255, 199, 80);
+}
+.card-img-top {
+    background-color: rgb(101, 51, 44);
+}
+.btn {
+    background-color: #7ace0e;
+}
+.btn:hover {
+    background-color: green;
+        border: 2px solid;
+}
+img {
+    border: 5px rgb(255, 176, 56) solid;
+    border-radius: 25%;
+}
+.card {
+    background-color: rgb(255, 176, 56);
+}

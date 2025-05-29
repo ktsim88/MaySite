@@ -1,0 +1,18 @@
+.modal-content {
+    background-color: #f4e9df;
+}
+.modal-footer {
+    background-color: #dbcfc6;
+}
+.modal-header {
+    background-color: #363d5f;
+    color: white;
+}
+
+.closebtn {
+    background-color: #7ace0e;
+}
+.closebtn:hover {
+    background-color: green;
+        border: 2px solid;
+}
