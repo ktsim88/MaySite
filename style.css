@@ -9,6 +9,14 @@
   min-height: 100%;
   z-index: 0;
 }
+.loadingImg {
+  position: relative;
+  z-index: 1;
+  margin-top: 50%;
+  background-color: rgb(103, 177, 88);
+  border-radius: 20px;
+  padding: 2vh;
+}
 a {
   list-style-type: none;
   text-decoration: none;
@@ -23,4 +31,7 @@ font-style: normal;
   font-family: "neue-kabel", sans-serif;
 font-weight: 700;
 font-style: normal;
+}
+.navbar {
+  background-color: #f8da94;
 }

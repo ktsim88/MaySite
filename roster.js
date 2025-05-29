@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('rosterGrid')
-
+    
     const render = list => {
         grid.innerHTML = ''
         
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                 <div id="cookieType">${p.type}</div>
                         <p class="small text-muted mb-2">${p.position}</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal" onclick="learnMore()">
+                            <button type="button" class="btn btn-primary show-info-btn" data-player-index="${index}" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal" onclick="learnMore()">
                             Learn More
                             </button>
 
@@ -27,14 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="cookieLabel">More About ${p.firstName} ${p.lastName}</h1>
+                                    <h1 class="modal-title fs-5" id="cookieLabel">'s Story</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body" id="info-body">
                                     <div class="row">
-                                    <div id="cookieInfo">${p.info}</div>
-                                        
-                                        
+                                    <div id="cookieInfo"></div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -52,6 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         })
     }
+    
     render(players)
+    grid.addEventListener('click', function (e) {
+  if (e.target.classList.contains('show-info-btn')) {
+    const index = e.target.getAttribute('data-player-index')
+    const player = players[index]
+    showPlayerModal(player)
+  }
+})
+
     
 })
+function learnMore() {
+    let cookieLabel = document.getElementById('cookieLabel')
+    let cookieInfo = document.getElementById('cookieInfo')
+    cookieLabel.textContent = `${this.firstName} ${this.lastName}'s Story`
+    cookieInfo.textContent =   `${this.info}`
+}
+
