@@ -9,10 +9,143 @@
     color: white;
 }
 
-.closebtn {
+.cardBtn {
+    background-color: #98499E;
+}
+.btn.closeBtn {
     background-color: #7ace0e;
 }
-.closebtn:hover {
+.btn.closeBtn:hover {
     background-color: green;
-        border: 2px solid;
+        border: 2px solid black;
+        color: white
+}
+.card {
+    background: hsla(357, 53%, 50%, 1);
+
+background: linear-gradient(270deg, hsla(357, 53%, 50%, 1) 52%, hsla(310, 70%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(357, 53%, 50%, 1) 52%, hsla(310, 70%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(357, 53%, 50%, 1) 52%, hsla(310, 70%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C13C42", endColorstr="#E466CE", GradientType=1 );
+    border: 2px black solid;
+    box-shadow: 10px 6px 1px rgb(90, 83, 83);}
+.AncientCard{
+    background: hsla(298, 32%, 34%, 1);
+
+background: linear-gradient(270deg, hsla(298, 32%, 34%, 1) 58%, hsla(284, 73%, 13%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(298, 32%, 34%, 1) 58%, hsla(284, 73%, 13%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(298, 32%, 34%, 1) 58%, hsla(284, 73%, 13%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#713B73", endColorstr="#2D093A", GradientType=1 );
+}
+.LegendaryCard{
+    background: hsla(146, 71%, 42%, 1);
+
+background: linear-gradient(270deg, hsla(146, 71%, 42%, 1) 74%, hsla(175, 70%, 74%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(146, 71%, 42%, 1) 74%, hsla(175, 70%, 74%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(146, 71%, 42%, 1) 74%, hsla(175, 70%, 74%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1FB761", endColorstr="#8FEBE4", GradientType=1 ); 
+}
+.BeastCard {
+    background: hsla(1, 65%, 21%, 1);
+
+background: linear-gradient(270deg, hsla(1, 65%, 21%, 1) 48%, hsla(352, 54%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(1, 65%, 21%, 1) 48%, hsla(352, 54%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(1, 65%, 21%, 1) 48%, hsla(352, 54%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#591413", endColorstr="#C43C4F", GradientType=1 );
+}
+.DragonCard {
+    background: hsla(31, 95%, 22%, 1);
+
+background: linear-gradient(270deg, hsla(31, 95%, 22%, 1) 52%, hsla(42, 100%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(31, 95%, 22%, 1) 52%, hsla(42, 100%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(31, 95%, 22%, 1) 52%, hsla(42, 100%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6C3903", endColorstr="#FFCA4E", GradientType=1 );
+}
+.SuperEpicCard {
+    background: hsla(280, 54%, 39%, 1);
+
+background: linear-gradient(270deg, hsla(280, 54%, 39%, 1) 60%, hsla(50, 98%, 66%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(280, 54%, 39%, 1) 60%, hsla(50, 98%, 66%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(280, 54%, 39%, 1) 60%, hsla(50, 98%, 66%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#752E98", endColorstr="#FDE255", GradientType=1 );
+}
+.SpecialCard {
+    background-color: yellow;
+}
+.RareCard {
+    background: hsla(204, 47%, 37%, 1);
+
+background: linear-gradient(270deg, hsla(204, 47%, 37%, 1) 52%, hsla(196, 59%, 53%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(204, 47%, 37%, 1) 52%, hsla(196, 59%, 53%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(204, 47%, 37%, 1) 52%, hsla(196, 59%, 53%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#32678B", endColorstr="#40A8CE", GradientType=1 );
+}
+.CommonCard {
+    background: hsla(28, 27%, 42%, 1);
+
+background: linear-gradient(180deg, hsla(28, 27%, 42%, 1) 52%, hsla(29, 22%, 42%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(28, 27%, 42%, 1) 52%, hsla(29, 22%, 42%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(28, 27%, 42%, 1) 52%, hsla(29, 22%, 42%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87694E", endColorstr="#816953", GradientType=1 );
+}
+.btn {
+    background-color: #ff8dec8f;
+    border: black 2px solid;
+}
+.btn:hover {
+    background-color: purple;
+    border: 2px solid black;
+    color: white;
+}
+.position {
+    color: white;
+}
+.Front {
+    background-color: #D4262C;
+}
+.Middle {
+    background-color: #a38e21;
+}
+.Rear {
+    background: #407f9e;
+}
+.card-title {
+    font-weight: 900;
+    background-color: rgba(255, 162, 22, 0.366);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+}
+.rarity {
+    color: white;
+}
+.cookieType {
+    color: white;
+}
+.position {
+    border-radius: 25px;
+    border: 2px rgb(0, 0, 0) solid;
 }

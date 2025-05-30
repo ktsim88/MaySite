@@ -9,16 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const col = document.createElement('div')
             col.className = 'col-6 col-lg-2'
             col.innerHTML = `
-                <div class="card h-100 mb-3">
+                <div class="card h-100 mb-3 ${p.altRarity}Card">
                 <img src="${p.photo}" class="card-img-top" alt="${p.firstName} ${p.lastName}">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-1">${p.firstName} ${p.lastName}</h5>
-                        <div class="${p.rarity}">
+                        <div class="${p.altRarity} rarity">
                             ${p.rarity}
                         </div>
-                <div id="cookieType">${p.type}</div>
-                        <p class="small text-muted mb-2">${p.position}</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal" onclick="learnMore()">
+                <div class="cookieType">${p.type}</div>
+                        <p class="small mb-2 ${p.position} position">${p.position}</p>
+                            <button type="button" class="btn btn cardBtn" data-bs-toggle="modal" data-bs-target="#${p.alt}Modal" onclick="learnMore()">
                             Learn More
                             </button>
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary closeBtn" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn closeBtn" data-bs-dismiss="modal">Close</button>
                                 </div>
                                 </div>
                             </div>
